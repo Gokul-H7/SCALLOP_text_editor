@@ -11,6 +11,7 @@
 
 #define SCALLOP_VERSION "1.0.0"
 
+// general movement function keys
 enum editorKey {
   CURSOR_UP = 1000,
   CURSOR_LEFT,
@@ -70,6 +71,7 @@ int editorReadKey() {
     if(nread == -1 && errno != EAGAIN) terminate("read");
   }
   
+  // handle key presses
   if(c == '\x1b') {
     char seq[3];
 
