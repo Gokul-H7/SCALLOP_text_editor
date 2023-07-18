@@ -1,2 +1,6 @@
 # SCALLOP_text_editor
-WIP text editor
+WIP text editor based off kilo text editor tutorial
+
+currently only supports viewing text files in the terminal
+
+
